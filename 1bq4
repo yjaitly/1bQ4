@@ -1,0 +1,22 @@
+main Function
+Input Handling:
+Prompts the user to enter the number of vertices (n).
+Reads the adjacency matrix (G) which represents the graph.
+Asks for the starting node (u).
+Function Call:
+Calls the dijkstra function with the graph, number of vertices, and starting node as arguments.
+dijkstra Function
+This function implements Dijkstra’s algorithm to find the shortest path from the starting node to all other nodes in a graph.
+
+Initialization:
+Cost Matrix: Converts the adjacency matrix into a cost matrix (cost). If there’s no direct edge between two nodes, the cost is set to INFINITY.
+Distance Array: Initializes the distance array to store the shortest distance from the starting node to each node.
+Predecessor Array: Initializes the pred array to store the predecessor of each node in the shortest path.
+Visited Array: Keeps track of visited nodes to avoid revisiting them.
+Algorithm Execution:
+Sets the distance of the starting node to itself as 0 and marks it as visited.
+Iteratively finds the next node with the minimum distance that hasn’t been visited yet.
+Updates the distance and predecessor for each neighboring node if a shorter path is found through the current node.
+Output:
+Prints the shortest distance from the starting node to each other node.
+Prints the path taken to reach each node from the starting node.
